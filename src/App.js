@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
@@ -24,6 +25,7 @@ function App() {
       <main>
         <Meals />
       </main>
+      <Footer />
     </CartProvider>
   );
 }
