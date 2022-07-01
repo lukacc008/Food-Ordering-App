@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 
+import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Layout/Header";
@@ -30,7 +31,8 @@ function App() {
       </main>
       <Footer />
       </Route>
-      <Route path="/about-us"><AboutUs /></Route>
+      <Route path="/o-nama"><AboutUs /></Route>
+      <Route path="/kontakt"><Contact /></Route>
     </CartProvider>
   );
 }
