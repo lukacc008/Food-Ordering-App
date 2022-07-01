@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 
+import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
@@ -29,6 +30,7 @@ function App() {
       </main>
       <Footer />
       </Route>
+      <Route path="/about-us"><AboutUs /></Route>
     </CartProvider>
   );
 }

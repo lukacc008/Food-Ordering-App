@@ -1,5 +1,7 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
+import AboutUs from "../../pages/AboutUs";
 import HeaderCartButton from "./HeaderCartButton";
 import mealsImage from "../../assets/burgerica.jpg";
 import classes from "./Header.module.css";
@@ -9,6 +11,9 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1>BAD-GUYS BURGERI</h1>
+        <nav>
+         <NavLink to="/about-us">O NAMA</NavLink>
+        </nav>
         <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>
