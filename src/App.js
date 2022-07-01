@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Route } from "react-router-dom";
 
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Layout/Header";
@@ -21,11 +22,13 @@ function App() {
   return (
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Route path="/pocetna">
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
       </main>
       <Footer />
+      </Route>
     </CartProvider>
   );
 }
