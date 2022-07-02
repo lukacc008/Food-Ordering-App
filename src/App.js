@@ -24,7 +24,7 @@ function App() {
   return (
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Route path="/pocetna">
+      <Route path="/" exact>
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
