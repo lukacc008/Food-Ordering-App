@@ -4,17 +4,17 @@ import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className={classes.footer}>
-      <h1>FOOTER</h1>
+      <h3>Bad-Guys burgers d.o.o.</h3>
       <div className={classes.kontakti}>
         {" "}
         <a href="https://www.facebook.com/">
-          <BsFacebook color="white" size="2em" />
+          <BsFacebook color="white" size="1em" />
         </a>{" "}
         <a href="https://www.instagram.com/">
-          <BsInstagram color="white" size="2em" />
+          <BsInstagram color="white" size="1em" />
         </a> {" "}
         <a href="https://twitter.com/">
-          <BsTwitter color="white" size="2em"/>
+          <BsTwitter color="white" size="1em"/>
         </a>
         </div>
     </div>

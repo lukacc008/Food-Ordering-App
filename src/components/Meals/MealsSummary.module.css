@@ -14,5 +14,17 @@
   
   .summary h2 {
     font-size: 2rem;
-    margin-top: 0;
+  }
+
+  @media all and (min-width: 320px) and (max-width: 719px) {
+    .summary {
+      padding: 0;
+    }
+  }
+
+  @media all and (max-width: 720px) {
+    .summary {
+      width: 100%;
+      
+    }
   }

@@ -19,3 +19,29 @@
     font-size: 1.25rem;
     padding-right: 40rem;
 }
+
+@media all and (max-width: 720px) {
+    .header  {
+      font-size: 6px;
+    }
+    .kontakti {
+        padding: 0;
+    }
+  }
+
+  @media all and (min-width: 721px) and (max-width: 992px) {
+    .kontakti {
+        padding: 0;
+    }
+  }
+
+  @media all and (min-width: 993px) and (max-width: 1200px) {
+      .kontakti {
+          padding: 0;
+      }
+  }
+  @media all and (min-width: 1200px) {
+      .kontakti{
+          padding: 0;
+      }
+  }

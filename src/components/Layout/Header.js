@@ -10,7 +10,7 @@ const Header = (props) => {
   return (
     <Fragment>
       <header className={classes.header}>
-        <h1>BAD-GUYS BURGERI</h1>
+        <h2>BAD-GUYS BURGERI</h2>
         <nav>
          <NavLink to="/o-nama">O NAMA</NavLink>
          <NavLink to="/kontakt">KONTAKT</NavLink>

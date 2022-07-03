@@ -1,6 +1,10 @@
-import React from "react";
+import Slider from "../components/UI/Slider";
 
 const AboutUs = () => {
-  return <h1>O nama</h1>;
+  return (
+    <div>
+      <h1>O NAMA</h1>
+    </div>
+  );
 };
 export default AboutUs;

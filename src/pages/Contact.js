@@ -35,7 +35,7 @@ function MyComponent() {
   return isLoaded ? (
     <Fragment>
       <header className={classes.header}>
-        <h1>Svratite do nas!</h1>
+        <h2>Svratite do nas!</h2>
         <h2>Mobilni: 060 000 111 2</h2>
         <h3>Adresa: Jurija Gagarina 151, Beograd</h3>
       </header>
