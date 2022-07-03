@@ -14,3 +14,8 @@
       font-size: 6px;
     }
   }
+  @media all and (min-width: 721px) and (max-width: 1000px) {
+    .header {
+      font-size: 6px;
+    }
+  }
