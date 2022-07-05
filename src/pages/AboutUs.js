@@ -1,9 +1,10 @@
-import Slider from "../components/UI/Slider";
+import ImageSlider from "../components/UI/ImageSlider";
+import SliderData from "../components/UI/ImageSliderData";
 
 const AboutUs = () => {
   return (
     <div>
-      <h1>O NAMA</h1>
+      <ImageSlider slides={SliderData}/>
     </div>
   );
 };
