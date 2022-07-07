@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Footer from "../components/Footer/Footer";
 import ImageSlider from "../components/UI/ImageSlider";
 import SliderData from "../components/UI/ImageSliderData";
 import classes from "./AboutUs.module.css";
@@ -27,6 +28,7 @@ const AboutUs = () => {
     <div>
       <ImageSlider slides={SliderData}/>
     </div>
+    <Footer />
     </div>
     </Fragment>
   );

@@ -1,6 +1,7 @@
 .slider {
     position: relative;
     top: 1rem;
+    padding-bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
