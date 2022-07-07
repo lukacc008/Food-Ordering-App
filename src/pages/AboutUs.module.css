@@ -1,3 +1,10 @@
+.body {
+  background-image: url("./../assets/burger-pozadina-removebg.png");
+  background-repeat: round;
+  height: 100vh;
+  background-size: 320px 320px;
+}
+
 .header {
     position: absolute, fixed;
     margin-top: 0;
@@ -21,7 +28,7 @@
     margin: auto;
     margin-top: 1rem;
     position: relative;
-    background-color: #383838;
+    background-color: black;
     color: white;
     border-radius: 14px;
     padding: 1rem;

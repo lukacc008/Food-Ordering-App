@@ -7,6 +7,7 @@ import { GiHamburger } from "react-icons/gi"
 const AboutUs = () => {
   return (
     <Fragment>
+      <div className={classes.body}>
       <header className={classes.header}>
         <GiHamburger className={classes.burger}/><h1>BAD GUYS BURGERS</h1><GiHamburger className={classes.burger}/>
       </header>
@@ -25,6 +26,7 @@ const AboutUs = () => {
 
     <div>
       <ImageSlider slides={SliderData}/>
+    </div>
     </div>
     </Fragment>
   );
