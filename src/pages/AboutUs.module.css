@@ -1,4 +1,6 @@
 .body {
+  display: flex;
+  flex-direction: column;
   background-image: url("./../assets/burger-pozadina-removebg.png");
   background-repeat: round;
   height: 100vh;
@@ -41,17 +43,20 @@
 
   @media all and (min-width: 320px) and (max-width: 719px) {
     .summary {
-      padding: 0;
+      width: 190%;
+    }
+    .header {
+      width: 200%;
     }
   }
 
   @media all and (max-width: 720px) {
+
+  }
+
+  @media all and (min-width: 719px) and (max-width: 992px) {
     .summary {
       width: 100%;
       
     }
-  }
-
-  @media all and (min-width: 719px) and (max-width: 992px) {
-    
   }
