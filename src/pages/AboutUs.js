@@ -10,14 +10,14 @@ const AboutUs = () => {
     <Fragment>
       <div className={classes.body}>
       <header className={classes.header}>
-        <GiHamburger className={classes.burger}/><h1>BAD GUYS BURGERS</h1><GiHamburger className={classes.burger}/>
+        <GiHamburger className={classes.burger}/><h1>BAD-GUYS BURGERS</h1><GiHamburger className={classes.burger}/>
       </header>
 
       <div className={classes.summary}>
-      <h2>Najbolji Burgeri U Gradu Kucaju Na Vaša Vrata</h2>
+      <h2>Prvi 'Smešovani' Burgeri U Beogradu!</h2>
       <p>
-        Izaberite vaš omiljeni burger iz naše ponude 
-        i uzivajte u prelepom ručku ili večeri kod kuće!
+        Ovi burgeri spremljeni su na specijalan način odnosno smešovanjem,
+        kako bi se postigao najjači ukus i kako bi meso bilo najhrskavije!
       </p>
       <p>
         Svi naši burgeri pripremljeni su sa najkvalitetnijim sastojcima, od strane
