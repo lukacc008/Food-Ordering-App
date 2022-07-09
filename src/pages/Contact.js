@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Card from "../components/UI/Card";
+import Footer from "../components/Footer/Footer";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import classes from "./Contact.module.css";
 
@@ -42,7 +42,7 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={15}
+        zoom={13}
         onLoad={onLoad}
         onUnmount={onUnmount}
       ></GoogleMap>

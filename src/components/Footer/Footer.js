@@ -10,11 +10,11 @@ const Footer = () => {
         <a href="https://www.facebook.com/" target="_blank">
           <BsFacebook color="white" size="1em" />
         </a>{" "}
-        <a href="https://www.instagram.com/">
-          <BsInstagram color="white" size="1em" target="_blank" />
+        <a href="https://www.instagram.com/" target="_blank">
+          <BsInstagram color="white" size="1em"  />
         </a> {" "}
-        <a href="https://twitter.com/">
-          <BsTwitter color="white" size="1em" target="_blank"/>
+        <a href="https://twitter.com/" target="_blank">
+          <BsTwitter color="white" size="1em" />
         </a>
         </div>
     </div>
