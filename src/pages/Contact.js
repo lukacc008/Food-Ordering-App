@@ -1,55 +1,29 @@
 import React, { Fragment } from "react";
-import Footer from "../components/Footer/Footer";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import Map from "../components/UI/Map";
 import classes from "./Contact.module.css";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
-const containerStyle = {
-  width: "",
-  height: "400px",
-  top: "4.10rem",
-};
-
-const center = {
-  lat: 44.80180067683327,
-  lng: 20.386125341525528,
-};
-
-function MyComponent() {
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyC9UQQJY9uwZBh8mBc4YE1mzNV0BU-RGaI",
-  });
-
-  const [map, setMap] = React.useState(null);
-
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-    setMap(map);
-  }, []);
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
-
-  return isLoaded ? (
+const Contact = () => {
+  return (
     <Fragment>
-      <header className={classes.header}>
-        <h2>Svratite do nas!</h2>
-        <h2>Mobilni: 060 000 111 2</h2>
-        <h3>Adresa: Jurija Gagarina 151, Beograd</h3>
-      </header>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={13}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      ></GoogleMap>
+      <Map />
+      <div className={classes.footer}>
+      <h3>Bad-Guys burgers d.o.o.</h3>
+      <div className={classes.kontakti}>
+        {" "}
+        <a href="https://www.facebook.com/" target="_blank">
+          <BsFacebook color="white" size="1em" />
+        </a>{" "}
+        <a href="https://www.instagram.com/" target="_blank">
+          <BsInstagram color="white" size="1em"  />
+        </a> {" "}
+        <a href="https://twitter.com/" target="_blank">
+          <BsTwitter color="white" size="1em" />
+        </a>
+        </div>
+    </div>
     </Fragment>
-  ) : (
-    <></>
   );
-}
+};
 
-export default React.memo(MyComponent);
+export default Contact;
