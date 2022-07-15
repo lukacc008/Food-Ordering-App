@@ -26,6 +26,7 @@ function App() {
 // Takodje putem props-a hideCartHandler saljem iz App.js u Cart.js
 // i tamo u okviru button taga na ugradjeni onClick prosledim
 // props.onClose i tako se zatvara modal klikom na dugme.
+
 // U Modal.js na konstanti Backdrop prebacim prop onClose na ugradjeni
 // onClick tag div-a i dole u JSX kodu na Backdrop onClose={props.onClose}
 // tako se zatvara modal klikom na backdrop!!
