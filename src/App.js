@@ -20,6 +20,8 @@ function App() {
     setCartIsShown(false);
   };
 
+// Putem props-a vrednost funkcije hideCartHandler saljem iz App.js 
+// u Header.js i na kraju na button sa ugradjenim onClick u HeaderCartButton.js
 
   return (
     <CartProvider>
