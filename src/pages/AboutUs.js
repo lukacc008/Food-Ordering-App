@@ -17,11 +17,11 @@ const AboutUs = () => {
       <h2>Prvi 'Smešovani' Burgeri U Beogradu!</h2>
       <p>
         Ovi burgeri spremljeni su na specijalan način odnosno smešovanjem,
-        kako bi se postigao najjači ukus i kako bi meso bilo najhrskavije!
+        kako bi se postigao najbolji ukus i kako bi meso bilo najhrskavije!
       </p>
       <p>
-        Svi naši burgeri pripremljeni su sa najkvalitetnijim sastojcima, od strane
-        iskusnih burger majstora sa višegodišnjim iskustvom!
+        U koliko nikada niste probali smešovane burgere, garantujemo
+        vam da ćete ostati bez teksta!
       </p>
     </div>
 

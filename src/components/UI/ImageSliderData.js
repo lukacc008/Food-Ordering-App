@@ -1,7 +1,7 @@
 const SliderData = [
   {
     image:
-      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1968&q=80",
+      "https://imageproxy.wolt.com/venue/62820643bacb69b948f3b063/dc06cab6-d5c3-11ec-8c73-c206c158cc01_menu_3__4_.jpg",
   },
 {
     image:
