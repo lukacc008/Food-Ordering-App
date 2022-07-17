@@ -22,6 +22,11 @@ const containerStyle = {
     const [map, setMap] = React.useState(null);
   
     const onLoad = React.useCallback(function callback(map) {
+      const marker = new google.maps.Marker({
+        lat: 44.80203290514809, 
+        lng: 20.38691282706356,
+        map: map,
+      });
       const bounds = new window.google.maps.LatLngBounds(center);
       map.fitBounds(bounds);
       setMap(map);
