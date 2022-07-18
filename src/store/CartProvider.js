@@ -26,6 +26,8 @@ const cartReducer = (state, action) => {
       updatedItems = [...state.items];
       updatedItems[existingCartItemIndex] = updatedItem;
     } else {
+      //concat mi daje nov array a ne edituje strai!
+      //vazno je jer ne zelim da updateujem stari state
       updatedItems = state.items.concat(action.item);
     }
 
@@ -57,6 +59,10 @@ const cartReducer = (state, action) => {
   return defaultCartState;
 };
 
+//Drugi element useReducera je funkcija u ovom slucaju dispatchCartAction
+//i koristi se u funkcijama za dodavanje i brisanje ajtema iz korpe
+// TYPE je prop koji koristim gore u funkciji cartReducer za prepoznavanje
+// "akcije" koja se odvija tu.
 const CartProvider = (props) => {
   const [cartState, dispatchCartAction] = useReducer(
     cartReducer,
@@ -70,6 +76,9 @@ const CartProvider = (props) => {
   const removeItemFromCartHandler = (id) => {
     dispatchCartAction({ type: "REMOVE_ITEM", id: id });
   };
+
+// Vrednosti koje cartContext dobija preko funkcija i reducera
+// I postavljen je kao vrednost CartContext.Provider-a kroz value prop
 
   const cartContext = {
     items: cartState.items,
