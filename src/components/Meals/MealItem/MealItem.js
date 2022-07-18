@@ -8,6 +8,9 @@ const MealItem = (props) => {
   const cartCtx = useContext(CartContext);
   const price = `${props.price} RSD`;
 
+//addItem je funkcija u CartProvider.js  addItemToCartHandler koja ocekuje
+// amount dobijam iz MealItemForm.js preko ref-ova
+//id, name i price iz AvailableMeals.js putem propsa
   const onAddToCartHandler = amount => {
    cartCtx.addItem({
      id: props.id,
