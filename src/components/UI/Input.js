@@ -2,6 +2,8 @@ import React from "react";
 
 import classes from "./Input.module.css";
 
+
+//input obavijem React.forwardRef-om
 const Input = React.forwardRef((props, ref) => {
   return (
     <div className={classes.input}>

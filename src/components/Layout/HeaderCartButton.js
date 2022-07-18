@@ -6,10 +6,21 @@ import classes from "./HeaderCartButton.module.css";
 
 const HeaderCartButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
- const cartCtx = useContext(CartContext);
 
+//cartCtx je konstanta koja ima vrednosti CartContext-a zatim
+// { items } dobija vrednost CartContext-a i zatim reduce metodom
+// iz skupa dobijam jednu vrednost!
+
+ const cartCtx = useContext(CartContext);
  const { items } = cartCtx;
 
+
+ //reduce ima 2 argumenta jedan je funkcija drugi pocetna vrednost (0)
+ //funkcija takodje ima 2 argumenta currentNumber ima pocetnu vrednost 0
+ // kada se funkcija izvrsi postace rezultat koji vracam
+ // (currentNumber + item.amount) gde item.amount ima amount polje u
+ //kome je broj itema. Sve to reduce metodom svedem na jedan broj i
+ //dinamicno ga predstavim dole u <span>.
  const numberOfCartItems = items.reduce((currentNumber, item) => {
    return currentNumber + item.amount;
  }, 0);
