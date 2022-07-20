@@ -8,10 +8,10 @@ const HeaderCartButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
 
 //cartCtx je konstanta koja ima vrednosti CartContext-a zatim
-// { items } dobija vrednost CartContext-a i zatim reduce metodom
-// iz skupa dobijam jednu vrednost!
 
  const cartCtx = useContext(CartContext);
+ //iz cartCtx ekstraktujem samo items i stavim ih u dependency u
+ //useEffectu da bi se pokretao samo kada se item promeni.
  const { items } = cartCtx;
 
 
