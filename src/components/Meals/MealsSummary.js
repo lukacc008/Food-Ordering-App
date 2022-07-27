@@ -1,4 +1,5 @@
 import classes from "./MealsSummary.module.css";
+import AiOutlineArrowDown from "react-icons/ai"
 
 const MealsSummary = () => {
   return (
@@ -12,6 +13,7 @@ const MealsSummary = () => {
         Svi naši burgeri pripremljeni su sa najkvalitetnijim sastojcima, od strane
         iskusnih burger majstora sa višegodišnjim iskustvom!
       </p>
+      <h1>! OPASNO DOBRI !</h1>
     </section>
   );
 };

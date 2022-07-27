@@ -15,18 +15,6 @@ const LISTA_BURGERA = [
     description: "iceberg, luk, krastavac, burger sos",
     price: 600,
   },
-  {
-    id: "m3",
-    name: "Burger Hot",
-    description: "krastavac, luk, BBQ sos, čili papričica ",
-    price: 650,
-  },
-  {
-    id: "m4",
-    name: "Burger Oklahoma",
-    description: "grilovani luk, kiseli krastavac, oklahoma sos",
-    price: 650,
-  },
 ];
 
 const AvailableMeals = () => {
