@@ -1,7 +1,7 @@
 .body {
   display: flex;
   flex-direction: column;
-  background-image: url("./../assets/burger-pozadina-removebg.png");
+  background-color: #0a0a0a;
   background-repeat: round;
   height: 100vh;
   background-size: 320px 320px;
@@ -12,11 +12,12 @@
     margin-top: 0;
     width: 100%;
     height: 4rem;
-    background-color: #8a2b06;
-    color: white;
+    background-color: black;
+    color: #FCB714;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid #FCB714;
   }
 
 .burger {
@@ -30,8 +31,8 @@
     margin: auto;
     margin-top: 1rem;
     position: relative;
-    background-color: black;
-    color: white;
+    background-color: #FCB714;
+    color: black;
     border-radius: 14px;
     padding: 1rem;
     box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);

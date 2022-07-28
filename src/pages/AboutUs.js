@@ -10,7 +10,7 @@ const AboutUs = () => {
     <Fragment>
       <div className={classes.body}>
       <header className={classes.header}>
-        <GiHamburger className={classes.burger}/><h1>BAD-GUYS BURGERS</h1><GiHamburger className={classes.burger}/>
+        <GiHamburger className={classes.burger}/><h1>BAD GUYS</h1><GiHamburger className={classes.burger}/>
       </header>
 
       <div className={classes.summary}>

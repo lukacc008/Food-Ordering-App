@@ -1,10 +1,11 @@
 .footer {
-    background-color: #8a2b06;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-top: 3px solid #FCB714;
 }
 
 .kontakti {
@@ -12,6 +13,10 @@
     font-size: 1.25rem;
     padding-right: 40rem;
 }
+.logo-image img {
+    height: 6rem;
+    width: 9rem;
+  }
 
 @media all and (max-width: 720px) {
     .header  {

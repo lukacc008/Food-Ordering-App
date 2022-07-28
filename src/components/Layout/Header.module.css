@@ -1,29 +1,33 @@
 .header {
     position: fixed;
     width: 100%;
-    height: 5rem;
-    background-color: #8a2b06;
-    color: white;
+    height: 7rem;
+    background-color: black;
+    color: #FCB714;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
+    border-bottom: 3px solid #FCB714;
   }
 
   .header nav > a {
-    color: white;
+    color: #FCB714;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px;
   }
-  .header nav > a:hover {
-    text-decoration: underline;
-  }
+.header nav > a:hover {
+  background: #FCB714;
+  color: black;
+  border-radius: 30px;
+  transition: 0.5s;
+}
   
   .main-image {
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     z-index: 0;
     overflow: hidden;
   }
@@ -32,6 +36,11 @@
     width: 110%;
     height: 100%;
     object-fit: cover; 
+  }
+
+  .logo-image img {
+    height: 7rem;
+    width: 9rem;
   }
   @media all and (min-width: 320px) and (max-width: 719px) {
     .header {

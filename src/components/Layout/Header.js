@@ -4,15 +4,18 @@ import { NavLink } from "react-router-dom";
 import AboutUs from "../../pages/AboutUs";
 import HeaderCartButton from "./HeaderCartButton";
 import mealsImage from "../../assets/burgerica.jpg";
+import badGuysLogo from "../../assets/logo.jpeg"
 import classes from "./Header.module.css";
 
 const Header = (props) => {
   return (
     <Fragment>
       <header className={classes.header}>
-        <h2>BAD-GUYS BURGERS</h2>
+        <div className={classes["logo-image"]}>
+        <img src={badGuysLogo} />
+        </div>
         <nav>
-         <NavLink to="/o-nama">O NAMA</NavLink>
+         <NavLink className={classes.navigacija} to="/o-nama">O NAMA</NavLink>
          <NavLink to="/kontakt">KONTAKT</NavLink>
         </nav>
         <HeaderCartButton onClick={props.onShowCart} />
