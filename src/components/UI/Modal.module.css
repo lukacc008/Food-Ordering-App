@@ -10,11 +10,13 @@
   
   .modal {
     position: fixed;
-    top: 10vh;
-    left: 5%;
-    height: 50%;
+    width: 37.75rem;
+    top: 13vh;
+     height: 45%;
     background-image: url(./../../assets/meni.jpeg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
     padding: 0.50rem;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -22,11 +24,17 @@
     animation: slide-down 300ms ease-out forwards;
   }
   
-  @media (min-width: 768px) {
+  @media all and (min-width: 320px) and (max-width: 719px) {
     .modal {
-      width: 40rem;
-      left: calc(50% - 20rem);
+      width: 15rem;
+      height: 20%;
     }
+  }
+  @media all and (min-width: 720px) and (max-width: 1530px) {
+     .modal {
+       width: 28.75rem;
+       height: 20rem;
+     }
   }
   
   @keyframes slide-down {

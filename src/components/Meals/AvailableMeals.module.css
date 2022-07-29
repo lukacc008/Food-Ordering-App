@@ -1,14 +1,11 @@
 .meals {
-    max-width: 60rem;
-    width: 90%;
-    margin: 2rem auto;
-    animation: meals-appear 1s ease-out forwards;
-  }
-  
-  .meals ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  width: 80rem;
+  height: 35rem;
+  animation: meals-appear 1s ease-out forwards;
+  background-image: url(./../../assets/SLIKA.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
   }
   
   @keyframes meals-appear {
@@ -20,5 +17,36 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @media all and (min-width: 320px) and (max-width: 500px) {
+    .meals {
+      width: 20rem;
+      height: 15rem;
+    }
+  }
+  @media all and (min-width: 501px) and (max-width: 719px) {
+    .meals {
+      width: 25rem;
+      height: 17rem;
+    }
+  }
+  @media all and (min-width: 720px) and (max-width: 900px) {
+    .meals {
+      width: 30rem;
+      height: 20rem;
+    }
+  }
+  @media all and (min-width: 901px) and (max-width: 1100px) {
+    .meals {
+      width: 35rem;
+      height: 24rem;
+    }
+  }
+  @media all and (min-width: 1101px) and (max-width: 1350px) {
+    .meals {
+      width: 45rem;
+      height: 29rem;
     }
   }
