@@ -47,4 +47,26 @@
     font-size: 6px;
   }
 }
+@media all and (min-width: 320px) and (max-width: 719px) {
+  .summary {
+    width: 80%;
+  }
+  .summary > h2 {
+    font-size: 14px;
+  }
+  .summary > h1 {
+    font-size: 15px;
+  }
+  .summary > p {
+    font-size: 9px;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .summary {
+    width: 90%;
+    
+  }
+}
   
