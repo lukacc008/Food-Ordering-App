@@ -1,5 +1,5 @@
 import classes from "./Footer.module.css";
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import badGuysLogo from "./../../assets/logo.jpeg"
 
 const Footer = () => {
@@ -10,15 +10,12 @@ const Footer = () => {
         </div>
       <div className={classes.kontakti}>
         {" "}
-        <a href="https://www.facebook.com/" target="_blank">
-          <BsFacebook color="white" size="1em" />
+        <a href="https://www.facebook.com/badguysnbg" target="_blank">
+          <BsFacebook color="#FCB714" size="2em" />
         </a>{" "}
         <a href="https://www.instagram.com/badguysnbg/" target="_blank">
-          <BsInstagram color="white" size="1em"  />
+          <BsInstagram color="#FCB714" size="2em"  />
         </a> {" "}
-        <a href="https://twitter.com/" target="_blank">
-          <BsTwitter color="white" size="1em" />
-        </a>
         </div>
     </div>
   );

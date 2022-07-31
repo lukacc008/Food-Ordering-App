@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 
+import classes from "./App.module.css"
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer/Footer";
@@ -8,6 +9,7 @@ import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
+import Mapa from "./components/Layout/Mapa";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -36,8 +38,9 @@ function App() {
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Route path="/" exact>
       <Header onShowCart={showCartHandler} />
-      <main>
+      <main className={classes.main}>
         <Meals />
+        <Mapa />
       </main>
       <Footer />
       </Route>

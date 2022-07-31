@@ -4,6 +4,7 @@ import CartItem from "./CartItem";
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
 import CartContext from "../../store/cart-context";
+import meni from "./../../assets/meni.jpeg"
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -36,16 +37,10 @@ const Cart = (props) => {
 
   return (
     <Modal onClose={props.onClose}>
-      {cartItems}
-      <div className={classes.total}>
-        <span>Ukupan Iznos:</span>
-        <span>{totalAmount}</span>
-      </div>
       <div className={classes.actions}>
         <button className={classes["button--alt"]} onClick={props.onClose}>
           Zatvori
         </button>
-        {hasItems && <button className={classes.button}>Poruči</button>}
       </div>
     </Modal>
   );
