@@ -27,3 +27,15 @@
     color: black;
     background-color: white;
   }
+
+  @media all and (min-width: 320px) and (max-width: 719px) {
+    .actions button {
+      display: flex;
+      width: 15px;
+      font-size: 10px;
+      height: 8px;
+      align-items: center;
+      margin-right: 14px;
+      
+    }
+  }

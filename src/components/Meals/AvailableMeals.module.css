@@ -22,31 +22,36 @@
   
   @media all and (min-width: 320px) and (max-width: 500px) {
     .meals {
-      width: 20rem;
+      width: 98vw;
       height: 15rem;
     }
   }
   @media all and (min-width: 501px) and (max-width: 719px) {
     .meals {
-      width: 25rem;
+      width: 98vw;
       height: 17rem;
     }
   }
   @media all and (min-width: 720px) and (max-width: 900px) {
     .meals {
-      width: 30rem;
+      width: 98vw;
       height: 20rem;
     }
   }
   @media all and (min-width: 901px) and (max-width: 1100px) {
     .meals {
-      width: 35rem;
+      width: 98vw;
       height: 24rem;
     }
   }
   @media all and (min-width: 1101px) and (max-width: 1350px) {
     .meals {
-      width: 45rem;
-      height: 29rem;
+     width: 98vw;
+    }
+  }
+  @media all and (min-width: 1351px) {
+    .meals {
+      width: 99vw;
+      height: 45rem;
     }
   }
