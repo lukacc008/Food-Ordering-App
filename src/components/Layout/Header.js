@@ -16,8 +16,8 @@ const Header = (props) => {
         </div>
         <nav>
          <NavLink className={classes.navigacija} to="/o-nama">O NAMA</NavLink>
-         <NavLink to="/kontakt">KONTAKT</NavLink>
         </nav>
+        <p>Telefon: 063/331-233</p>
         <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>

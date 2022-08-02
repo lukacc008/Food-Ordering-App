@@ -5,7 +5,7 @@
     background-color: black;
     color: #FCB714;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
@@ -23,6 +23,9 @@
   color: black;
   border-radius: 30px;
   transition: 0.5s;
+}
+.header p {
+  font-weight: bold;
 }
   
   .main-image {
@@ -42,6 +45,13 @@
     height: 7rem;
     width: 9rem;
   }
+  @media all and (min-width: 320px) and (max-width: 520px) {
+    .logo-image img {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
   @media all and (min-width: 320px) and (max-width: 719px) {
     .header {
       display: flex;

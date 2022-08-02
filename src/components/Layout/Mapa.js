@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import Mapaa from "./../../assets/MapaBadguys.png";
 import Flajer from "./../../assets/flajer.jpeg";
 import classes from "./Mapa.module.css";
+import Glovo from "./../../assets/glovo-circle.png"
 
 const Mapa = () => {
   return (
@@ -21,6 +22,9 @@ const Mapa = () => {
           i ukus naših smešovanih burgera!
         </p>
         <h2>Radno Vreme Ponedeljak-Nedelja 11:00 - 23:00</h2>
+      </div>
+      <div className={classes.glovo}>
+        <p>DOSTUPNI SMO I NA</p> <img src={Glovo}/>
       </div>
     </Fragment>
   );

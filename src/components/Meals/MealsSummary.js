@@ -9,7 +9,7 @@ const MealsSummary = () => {
         Svi naši burgeri pripremljeni su sa najkvalitetnijim sastojcima, od strane
         iskusnih burger majstora sa višegodišnjim iskustvom!
       </p>
-      <h1>! OPASNO DOBRI !</h1>
+      <h1>OPASNO DOBRI</h1>
     </section>
   );
 };
