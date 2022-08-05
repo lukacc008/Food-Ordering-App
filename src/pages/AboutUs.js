@@ -14,7 +14,7 @@ const AboutUs = () => {
       </header>
 
       <div className={classes.summary}>
-      <h2>Prvi 'Smešovani' Burgeri U Beogradu!</h2>
+      <h2>Prvi Smešovani Burgeri U Beogradu!</h2>
       <p>
         Ovi burgeri spremljeni su na specijalan način odnosno smešovanjem,
         kako bi se postigao najbolji ukus i kako bi meso bilo najhrskavije!
