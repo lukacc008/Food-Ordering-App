@@ -21,7 +21,7 @@ const Mapa = () => {
           Posetite nas na adresi Gandijeva 148a, Beograd i uverite se u kvalitet
           i ukus naših smešovanih burgera!
         </p>
-        <h2>Radno Vreme Ponedeljak-Nedelja 11:00 - 23:00</h2>
+        <h2>Radno Vreme Ponedeljak-Subota 11:00 - 23:00</h2>
       </div>
       <div className={classes.glovo}>
         <p>DOSTUPNI SMO I NA</p> <img src={Glovo}/>
