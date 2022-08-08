@@ -1,9 +1,6 @@
 import { Fragment } from "react";
 import Footer from "../components/Footer/Footer";
-import ImageSlider from "../components/UI/ImageSlider";
-import SliderData from "../components/UI/ImageSliderData";
 import classes from "./AboutUs.module.css";
-import { GiHamburger } from "react-icons/gi"
 import Logo from "./../assets/logo.jpeg"
 import Image1 from "./../assets/slika1.jpg"
 import Image2 from "./../assets/slika2.jpg"

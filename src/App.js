@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , Fragment } from "react";
 import { Route } from "react-router-dom";
 
 import classes from "./App.module.css"
@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
-import CartProvider from "./store/CartProvider";
 import Mapa from "./components/Layout/Mapa";
 
 function App() {
@@ -21,19 +20,8 @@ function App() {
     setCartIsShown(false);
   };
 
-// Putem props-a vrednost funkcije showCartHandler saljem iz App.js 
-// u Header.js i na kraju na button sa ugradjenim onClick u HeaderCartButton.js
-
-// Takodje putem props-a hideCartHandler saljem iz App.js u Cart.js
-// i tamo u okviru button taga na ugradjeni onClick prosledim
-// props.onClose i tako se zatvara modal klikom na dugme.
-
-// U Modal.js na konstanti Backdrop prebacim prop onClose na ugradjeni
-// onClick tag div-a i dole u JSX kodu na Backdrop onClose={props.onClose}
-// tako se zatvara modal klikom na backdrop!!
-
   return (
-    <CartProvider>
+    <Fragment>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Route path="/" exact>
       <Header onShowCart={showCartHandler} />
@@ -43,8 +31,8 @@ function App() {
       </main>
       <Footer />
       </Route>
-      <Route path="/o-nama"><AboutUs /></Route>
-    </CartProvider>
+      <Route path="/galerija"><AboutUs /></Route>
+      </Fragment>
   );
 }
 

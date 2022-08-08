@@ -1,7 +1,5 @@
 import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-
-import AboutUs from "../../pages/AboutUs";
 import HeaderCartButton from "./HeaderCartButton";
 import mealsImage from "../../assets/burgerica.jpg";
 import badGuysLogo from "../../assets/logo.jpeg"
