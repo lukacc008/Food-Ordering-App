@@ -1,6 +1,8 @@
+import classes from "./HeaderCartButton.module.css";
+
 const HeaderCartButton = (props) => {
   return (
-    <button className={btnClasses} onClick={props.onClick}>
+    <button className={classes.button} onClick={props.onClick}>
       <span>POGLEDAJ MENI</span>
     </button>
   );
